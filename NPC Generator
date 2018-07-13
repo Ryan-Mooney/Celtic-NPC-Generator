@@ -1,0 +1,50 @@
+import random
+sex = random.randint(1,2)
+if sex == 1:
+    sex = 'male'
+    firstnames_file = open("malefirstnames.txt", 'r', 0)
+    firstnameslist = firstnames_file.readlines()
+else:
+    sex = 'female'
+    firstnames_file = open("femalefirstnames.txt", 'r', 0)
+    firstnameslist = firstnames_file.readlines()
+
+lastnames_file = open("celticlastnames.txt", 'r', 0)
+lastnameslist = lastnames_file.readlines()
+
+alignment_file = open("alignment.txt", 'r', 0)
+alignmentlist = alignment_file.readlines()
+
+relationship_file = open("relationship_status.txt", 'r', 0)
+relationshiplist = relationship_file.readlines()
+
+race_file = open("race.txt", 'r', 0)
+racelist = race_file.readlines()
+
+bonds_file = open("bonds.txt", 'r', 0)
+bondslist = bonds_file.readlines()
+
+flaws_file = open("flaws.txt", 'r', 0)
+flawslist = flaws_file.readlines()
+
+gods_file = open("gods.txt", 'r', 0)
+godslist = gods_file.readlines()
+
+ideals_file = open("ideals.txt", 'r', 0)
+idealslist = ideals_file.readlines()
+
+personality_file = open("personality_traits.txt", 'r', 0)
+personalitylist = personality_file.readlines()
+    
+print 'First Name: ' + random.choice(firstnameslist)
+print 'Last Name: ' + random.choice(lastnameslist)
+print 'Alignment: ' + random.choice(alignmentlist)
+print 'Relationship status: ' + random.choice(relationshiplist)
+print 'Race: ' + random.choice(racelist)
+print 'Bonds: ' + random.choice(bondslist)
+print 'Flaws: ' + random.choice(flawslist)
+print 'Gods: ' + random.choice(godslist)
+print 'Ideals: ' + random.choice(idealslist)
+print 'Personality: ' + random.choice(personalitylist)
+
+##add personality traits (3), description (5), special plot hook
